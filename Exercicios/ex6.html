@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<title>Números com JS</title>
+	<link rel="icon" type="image/x-icon" href="js.png">
+	<style>
+		body { font: 12pt Arial;}
+		button { font-size: 12pt; padding: 30px; }
+	</style>
+</head>
+<body>
+	</h1>Somando dois números</h1><br>
+	<button onclick="calculo()">Iniciar Soma</button>
+	<section id ="resultado">
+		<p>O resultado vem aqui</p>
+	</section>
+	<script>
+		window.alert('Seja bem-vindo(a) ao meu site!')
+		
+		function calculo() {
+			let n1 = window.prompt('Digite um número:');
+			let n2 = window.prompt('Digite um número:');
+			let res = document.querySelector('section#resultado')
+			/*Se colocar apenas n1+n2(10+10) o resultado sera 1010;
+			Isso ocorre porque o retorno da função prompt() é sempre
+			uma string. Então a adição fará a concatenação de ambas. 
+			Se deseja somar os números precisa converter a variável para
+			um tipo numérico, isto se dá com parseInt(), por exemplo.*/
+			let soma = parseInt(n1) + parseInt(n2);
+			//tag mark para deixar o texto grifado em amarelo
+			res.innerHTML = `<br>A soma entre <mark>${n1}</mark> e <mark>${n1}</mark> é igual a <strong>${soma}</strong>!`
+		}
+	</script>
+</body>
+</html>

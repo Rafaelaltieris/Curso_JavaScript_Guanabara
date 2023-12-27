@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<title>Números com JS</title>
+	<link rel="icon" type="image/x-icon" href="js.png">
+	<style>
+		body { font: 12pt Arial;}
+		button { font-size: 12pt; padding: 30px; }
+		h1 { font: 20pt Arial;}
+	</style>
+</head>
+<body>
+	</h1>Trabalhando com números</h1><br>
+	<button onclick="calculo()">Clique para calcular</button>
+	<section id ="resultado">
+		<p>O dobro de 0 é 0 e a metade é 0!</p>
+	</section>
+	<script>
+		window.alert('Seja bem-vindo(a) ao meu site!')
+		function calculo() {
+			let numero = window.prompt('Digite um número:');
+			let res = window.document.getElementById('resultado');
+			res.innerHTML = `<br>O dobro de ${numero} é ${numero*2} e a metade é ${numero/2}!`
+		}
+	</script>
+
+</body>
+</html>
