@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<title>Números com JS</title>
+	<link rel="icon" type="image/x-icon" href="js.png">
+	<style>
+		body { font: 12pt Arial;}
+		button { font-size: 12pt; padding: 30px; }
+		h1 { font: 20pt Arial;}
+	</style>
+</head>
+<body>
+	<h1>Vários cálculos em JS</h1><br>
+	<button onclick="calculo()">Clique para calcular</button>
+	<section id ="resultado">
+		<p>O resultado vai aparecer aqui...</p>
+	</section>
+	<script>
+		function calculo() {
+			let numero = window.prompt('Digite um número:');
+			let res = window.document.getElementById('resultado');
+			res.innerHTML = `<br> O número a ser analisado aqui será o ${numero}<br><br>
+							 <hr><br> O seu valor absoluto é ${Math.abs(numero)}<br>
+							 <br> O seu valor inteiro é ${Math.trunc(numero)}<br>
+							 <br> O inteiro mais próximo é ${Math.round(numero)}<br>
+							 <br> A raiz quadrada de ${numero} é ${Math.sqrt(numero)}<br>
+							 <br> A sua raiz cúbica é ${Math.cbrt(numero)}<br>
+							 <br> O valor de ${numero} é ${Math.pow(numero,2)}<br>
+							 <br> O valor de ${numero} é ${Math.pow(numero,3)}<br>`
+							 
+		}
+		
+		
+		 /* Segunda forma para se executar
+		 function calculo() {
+            let num = Number(window.prompt('Digite um número: '))
+            
+            let res = document.querySelector('section#result')
+            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong></p><hr>`
+            res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(num)}</p>`
+            res.innerHTML += `<p>A sua parte inteira é ${Math.trunc(num)}</p>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(num)}</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(num)}</p>` 
+            res.innerHTML += `<p>A sua raiz cúbica é ${Math.cbrt(num)}</p>`        
+            res.innerHTML += `<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}</p>`
+            res.innerHTML += `<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`
+        }*/
+	</script>
+
+</body>
+</html>
