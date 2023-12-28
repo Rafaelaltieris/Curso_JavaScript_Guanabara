@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="js.png">
+</head>
+<body>
+    <h1>Antecessor e Sucessor</h1>
+    <button onclick="antecessorSucessor()">Antecessor e Sucessor</button>
+
+    <script>
+		function antecessorSucessor()
+		{
+		let num = window.prompt('Digite um número:');
+		let antecessor = num--;
+		let sucessor = num++;
+		
+		window.alert(`Antes de ${num}, temos o número ${antecessor} Depois de ${num}, temos o número ${sucessor}`)
+		
+		}
+	</script>
+</body>
+</html>
