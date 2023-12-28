@@ -12,15 +12,13 @@
     <button onclick="troco()">Calculando o troco</button>
 
     <script>
-		function troco()
-		{
-		let produto = window.prompt('Qual produto você está comprando?');
-		let custo = window.prompt(`Quanto custa ${produto} que você está comprando?`);
-		let valorPago = window.prompt(`Qual foi o valor que você deu para pagar ${produto}`);
-		let troco = valorPago - custo;
+		function troco() {
+			let produto = window.prompt('Qual produto você está comprando?');
+			let custo = window.prompt(`Quanto custa ${produto} que você está comprando?`);
+			let valorPago = window.prompt(`Qual foi o valor que você deu para pagar ${produto}`);
+			let troco = valorPago - custo;
 		
-		window.alert(`Você comprou ${produto} que custou R$ ${custo} Deu R$ ${valorPago} em dinheiro e vai receber R$ ${troco}.Volte Sempre`)
-		
+			window.alert(`Você comprou ${produto} que custou R$ ${custo} Deu R$ ${valorPago} em dinheiro e vai receber R$ ${troco}.Volte Sempre`)
 		}
 	</script>
 </body>
