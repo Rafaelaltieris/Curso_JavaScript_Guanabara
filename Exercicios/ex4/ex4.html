@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
+
 <head>
-	<meta charset = "UTF-8">
-	<meta name="viewport"
-	content="width=device-width, initial-scale=1.0">
-	<title>Dados com JS</title>
-	<link rel="icon" type="image/x-icon" href="js.png">
-	<style>
-		body { font: 12pt Arial;}
-		button { font-size: 12pt; padding: 30px; }
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <title>Lista de Exercícios</title>
 </head>
+
 <body>
-	</h1>Interagindo com um botão</h1>
-	<button onclick="inicio()">Clica em mim!</button>
-	<section id ="resultado">
-		<p>Aqui vai aparecer o resultado...</p>
-	</section>
-	<script>
-		function inicio() {
-			let nome = window.prompt('Qual é o seu nome?');
-			let res = window.document.getElementById('resultado');
-			res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;`
-		}
-	</script>
+    <header>
+        <div id="faixa-superior"></div>
+        <div id="menu">
+            <a href="../../index.html">
+                <img id="logo" src="../../img/logo.png" alt="Logotipo SENAI" />
+            </a>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../../exercicios.html">Atividade</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container">
+        <h1>Exercício nº 04</h1>
+
+        <p class="tituloAtividade">
+           Digite um número e descubra o dobro dele e sua metade.
+        </p>
+
+        <label for="numero"></label>
+        <input type="number" id="numero" name="numero" required />
+        <button class="btnExecutar" onclick="exercicio4()">Descubra o valor</button>
+
+        <div id="resposta">
+            <h2>Resposta da Atividade</h2>
+            <p id="erro"></p>
+            <p id="resultado"></p>
+        </div>   
+    </div>
+    <footer>
+        SENAI Jaú | Prof Altieris<br />
+        Curso Técnico em Desenvolvimento de Sistemas
+    </footer>
 </body>
+<script src="../../js/script.js"></script>
+
 </html>

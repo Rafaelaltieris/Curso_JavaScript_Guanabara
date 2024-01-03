@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>Lista de Exercícios</title>
 </head>
 
@@ -13,38 +13,41 @@
     <header>
         <div id="faixa-superior"></div>
         <div id="menu">
-            <a href="../../index.html">
-                <img id="logo" src="../../img/logo.png" alt="Logotipo SENAI" />
+            <a href="index.html">
+                <img id="logo" src="img/logo.png" alt="Logotipo SENAI" />
             </a>
             <nav>
-                <a href="../../index.html">Home</a>
-                <a href="../../exercicios.html">Atividade</a>
+                <a href="index.html">Home</a>
+                <a href="exercicios.html">Atividade</a>
             </nav>
         </div>
     </header>
 
     <div id="container">
-        <h1>Exercício nº 03</h1>
+        <h1>Exercício nº 01</h1>
 
         <p class="tituloAtividade">
-            Digite sua idade. 
+            Escreva um programa que solicite ao usuário um número e exiba todos 
+            os números pares de 0 até esse número utilizando um laço <i>"for"</i>. 
         </p>
 
-        <label for="idade"></label>
-        <input type="number" id="idade" name="idade" required />
-        <button class="btnExecutar" onclick="exercicio3()">Veja sua Idade</button>
+        
+        <label for="num"></label>
+        <input type="number" id="num" name="num" required />
+        <button class="btnExecutar" onclick="exercicio1()">Executar</button>
 
         <div id="resposta">
             <h2>Resposta da Atividade</h2>
             <p id="erro"></p>
             <p id="resultado"></p>
-        </div>   
+        </div>
+        
     </div>
     <footer>
         SENAI Jaú | Prof Altieris<br />
         Curso Técnico em Desenvolvimento de Sistemas
     </footer>
 </body>
-<script src="../../js/script.js"></script>
+<script src="js/script.js"></script>
 
 </html>

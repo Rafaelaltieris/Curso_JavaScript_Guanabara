@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt_br">
+
 <head>
-	<meta charset = "UTF-8">
-	<meta name="viewport"
-	content="width=device-width, initial-scale=1.0">
-	<title>Primeiro JS</title>
-	<link rel="icon" type="image/x-icon" href="js.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <title>Lista de Exercícios</title>
 </head>
+
 <body>
-	<h1>Primeiro JavaScript</h1>
-	<script>
-		window.alert('Olá, Mundo!')
-	</script>
+    <header>
+        <div id="faixa-superior"></div>
+        <div id="menu">
+            <a href="../../index.html">
+                <img id="logo" src="../../img/logo.png" alt="Logotipo SENAI" />
+            </a>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../../exercicios.html">Atividade</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container">
+        <h1>Exercício nº 01</h1>
+
+        <p class="tituloAtividade">
+            Escrevendo nosso primeiro <i>"Hello World"</i>. 
+        </p>
+
+        <label for="hello"></label>
+        <input type="text" id="hello" name="hello" required />
+        <button class="btnExecutar" onclick="exercicio1()">Hello World</button>
+
+        <div id="resposta">
+            <h2>Resposta da Atividade</h2>
+            <p id="erro"></p>
+            <p id="resultado"></p>
+        </div>   
+    </div>
+    <footer>
+        SENAI Jaú | Prof Altieris<br />
+        Curso Técnico em Desenvolvimento de Sistemas
+    </footer>
 </body>
+<script src="../../js/script.js"></script>
+
 </html>
