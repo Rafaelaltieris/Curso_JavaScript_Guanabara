@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Temperatura</title>
+</head>
+<body>
+    <h1>Converta a temperatura</h1>
+    <h2>converta a temperatura de Celsius para Fahrenheit e Kelvin</h2>
+</body>
+</html>
+<script>
+    let celsius = window.prompt("Digite a temperatura em graus Celsius(C):");
+    let fahrenheit = parseInt(celsius * 9/5).toFixed(6) + 32;
+    let kelvin = parseInt(celsius + 273.15).toFixed(6);
+    alert(`A temperatura em Celsius é de ${celsius}, em Fahrenheit é ${fahrenheit} e em Kelvin de ${kelvin}`)
+</script>
