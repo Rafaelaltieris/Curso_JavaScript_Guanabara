@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
+
 <head>
-	<meta charset = "UTF-8">
-	<meta name="viewport"
-	content="width=device-width, initial-scale=1.0">
-	<title>Números com JS</title>
-	<link rel="icon" type="image/x-icon" href="js.png">
-	<style>
-		body { font: 12pt Arial;}
-		button { font-size: 12pt; padding: 30px; }
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <title>Lista de Exercícios</title>
 </head>
+
 <body>
-	<h1>Média do aluno v1.0</h1>
-	<button onclick="media()">Clique para calcular</button>
-	<section id ="resultado">
-		<p>Aqui será a resposta</p>
-	</section>
-	<script>
-		function media() {
-			let nome = window.prompt('Qual é o nome do aluno');
-			let n1 = window.prompt(`Qual foi a primeira nota de ${nome}?`);
-			let n2 = window.prompt(`Além de ${n1}, qual foi a outra nota?`);
-			let media = (parseInt(n1) + parseInt(n2))/2;
-			let res = window.document.getElementById('resultado');
-			
-			res.innerHTML = `<br>Calculando a média final de <mark>${nome}</mark>
-							 <br>As notas obtidas foram de <mark>${n1} e ${n2}</mark>
-							 <br> A média final será ${media}.`
-		}
-	</script>
+    <header>
+        <div id="faixa-superior"></div>
+        <div id="menu">
+            <a href="../../index.html">
+                <img id="logo" src="../../img/logo.png" alt="Logotipo SENAI" />
+            </a>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../../exercicios.html">Atividade</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container">
+        <h1>Exercício nº 06</h1>
+
+        <p class="tituloAtividade">
+           Digite um valor e mostre o antecessor e sucessor do mesmo.
+        </p>
+
+        <label for="produto">Produto</label>
+        <input type="text" id="produto" name="produto" required/>
+
+		<label for="preco">Preço</label>
+        <input type="number" id="preco" name="preco" required/>
+
+		<label for="pago">Valor Pago</label>
+        <input type="number" id="pago" name="pago" required/>
+
+        <button class="btnExecutar" onclick="exercicio7()">Maior e Menor</button>
+
+        <div id="resposta">
+            <h2>Resposta da Atividade</h2>
+            <p id="erro"></p>
+            <p id="resultado"></p>
+        </div>   
+    </div>
+    <footer>
+        SENAI Jaú | Prof Altieris<br />
+        Curso Técnico em Desenvolvimento de Sistemas
+    </footer>
 </body>
+<script src="../../js/script.js"></script>
+
 </html>
